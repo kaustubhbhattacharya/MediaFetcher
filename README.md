@@ -1,4 +1,4 @@
-# 🎞️ MediaFetcher
+# 🎞️ MediaFetcher — Python Desktop Media Downloader (Research & Learning Project)
 
 **A lightweight, open-source desktop app for saving openly-licensed media to your computer.**
 Created by Kaustubh Bhattacharya (https://github.com/kaustubhbhattacharya)
