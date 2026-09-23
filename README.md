@@ -6,6 +6,10 @@ Created by Kaustubh Bhattacharya (https://github.com/kaustubhbhattacharya)
 MediaFetcher is a simple Windows GUI built on top of [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) and [`gallery-dl`](https://github.com/mikf/gallery-dl) that lets you paste a link from a supported open-access or Creative Commons platform and save the video, image, or gallery locally — with a clean interface, a download history, and dark mode.
 
 ---
+***23/09/2026 -***
+
+***wip: fix missing bundler dependencies and cross-device runtime
+Standalone EXE failed on fresh environment due to hidden module imports. Refactoring build setup over the next week.***
 
 ## ✨ Features
 
