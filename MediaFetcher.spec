@@ -1,8 +1,11 @@
 # -*- mode: python ; coding: utf-8 -*-
 from PyInstaller.utils.hooks import collect_data_files, collect_submodules
 
-# Collect extra data files and hidden submodules
+# Collect data files AND submodules for customtkinter
 customtkinter_datas = collect_data_files('customtkinter')
+customtkinter_hiddenimports = collect_submodules('customtkinter')
+
+# Collect hidden submodules for yt_dlp
 ytdlp_hiddenimports = collect_submodules('yt_dlp')
 
 a = Analysis(
@@ -10,7 +13,7 @@ a = Analysis(
     pathex=[],
     binaries=[('gallery-dl.exe', '.')],
     datas=[('favicon.ico', '.')] + customtkinter_datas,
-    hiddenimports=ytdlp_hiddenimports,
+    hiddenimports=customtkinter_hiddenimports + ytdlp_hiddenimports,
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
